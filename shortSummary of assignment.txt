@@ -1,0 +1,34 @@
+Frontend:
+Form: Name, Phone number, Email, hobbies
+button: save, update, delete, add, send data to email
+
+-------------Backend-------------------
+table:
+Select: (checkbox attribute to select row/rows)
+ID: serial number
+Name:name
+phone number
+email
+hobbies
+update/delete
+ ...............
+open popup and table that contain 4 input field
+and save button option
+
+next div
+all data from data base to show with update/delete data
+with checkbox
+
+after div one button to send selected data to 
+email
+
+abhishekkumarssm76
+qKNNlzxQnff5Sks4
+
+task completed;
+
+backend 
+1. create User data api -- post--http://localhost:7000/api/user
+2. Fetch User Data api -- get -- http://localhost:7000/api/user
+3. Update user data api -- put -- http://localhost:7000/api/user:id
+4. Delete user Data api -- delete -- http://localhost:7000/api/user:id
