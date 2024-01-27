@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 <Save />
-function Popup({onClose}) {
+function Popup({onClose, fetchData}) {
     const modelRef = useRef();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -49,6 +49,7 @@ function Popup({onClose}) {
 
             try{
                 const response = await axios.post(`${apiUrl}/api/user`, data);
+                fetchData();
                 toast("Successfully created")
             }catch(err){
                 toast("Error during save data")

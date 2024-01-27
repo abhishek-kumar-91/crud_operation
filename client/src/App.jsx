@@ -95,7 +95,7 @@ console.log("checkbox", checkBox)
          
         </div>
         <div className="flex justify-center">
-        {showModal && <Popup onClose= {() => setShowModal(false)} />}
+        {showModal && <Popup fetchData={fetchData} onClose= {() => setShowModal(false)} />}
         </div>
 
 
